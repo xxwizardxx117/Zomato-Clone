@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- we linked the css sheet  -->
+    <title>Zomato</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <header>
+        <nav class="navbar">
+
+            <div class="navbar_company">
+                <!-- here we specify the height & width of the div because image has its own size and if we resize it we may face size issues -->
+                <!-- the above help us aviod issues as we make a division of required size and then scale image as full (100%) in it -->
+                <img src="assets/logo.png" alt="logo" class="navbar_logo">
+                <!-- alt shows the text in case the image fails to load or has an error -->
+                <!-- here we gave image a class name so that instead of resizing image using the html we can use css and make it more readable -->
+            </div>
+
+            <div class="navbar_nav_items">
+                <!-- we use button tag to make buttton -->
+                <button class="nav_item button_primary">Order Food</button>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+    <main class="container">
+        <!-- we use the container class so as to make a margin (padding) throught the web page (here it creates a margine and padding for the main division)-->
+        <!-- It is a part of boot strap -->
+        <!-- Hero Section -->
+        <section class="hero_container">
+<!-- here we make a section for our work -->
+            <div class="hero_image_container">
+                <!-- we make a division for image in the section(container) -->
+                <img src="assets/hero.jpg" alt="hero image" class="hero_image">
+                <!-- we add the image in the required space with a class to do further modifications -->
+            </div>
+
+            <div class="hero_discription">
+                <!-- we create another division out of container so as to give the text that we want to be written and give division a class name -->
+                <h1 class="hero_text">
+                    <!-- we right the text that we want and give that a class name for modification -->
+                    Order food from favourite resturaunts near you.
+                </h1>
+                <button class="button_primary">
+                    <!-- here we are using the same class name which is not a good practice so we will make the name as global item-->
+                    Order now
+                </button>
+            </div>
+        </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- explore menu  -->
+        <section class="explore_menu_container">
+
+
+            <h1 class="explore_menu_text">Explore Our Menu</h1>
+            <div class="explore_menu_background_gradient">
+                
+            </div>
+            <div class=" explore_menu_lists ">
+
+
+                <!-- burger -->
+                <div class="food_card">
+                    <div class="food_card_image_container">
+                        <img src="assets/burger.jpg" alt="Burger" class="food_image ">
+                    </div>
+                    <div class="food_card_discription">
+                        <h3 class="food_title">Burger</h3>
+                        <p>Burger King, Mcdonalds, Burger Palace<span style="color: #d83a56;">+3</span><!-- here we used inline css as ther is only one element that needs to be stylized -->
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- pizza -->
+                <div class="food_card" id="pizza">
+                    <div class="food_card_image_container">
+                        <img src="assets/pizza.jpg" alt="Pizza" class="food_image ">
+                    </div>
+                    <div class="food_card_discription">
+                        <h3 class="food_title">Pizza</h3>
+                        <p>Pizza Hut, Domino's Pizza<span style="color: #d83a56;">+3</span><!-- here we used inline css as ther is only one element that needs to be stylized -->
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- ice cream -->
+                <div class="food_card">
+                    <div class="food_card_image_container">
+                        <img src="assets/iceCream.jpg" alt="Ice cream" class="food_image ">
+                    </div>
+                    <div class="food_card_discription">
+                        <h3 class="food_title">Ice Creams </h3>
+                        <p>Baskin Robins, Ibaco<span style="color: #d83a56;">+3</span><!-- here we used inline css as ther is only one element that needs to be stylized -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- quote container -->
+        <section class="quote_container">
+                <!-- <div class="quote_image_container"> -->
+                    <img  class="quote_image_bgcover">
+                <!-- </div> -->
+            
+
+            <div class="quote_text_container">
+                <h1 class="quote_text">
+                    When a man's stomach is full it makes no difference whether he is rich or poor.
+                </h1>
+            </div>
+        </section>
+
+    </main>
+<br>
+<br>
+<br>
+<br>
+    <footer class="end_container">
+        <div class="footer_image_container">
+            <img src="assets/logo.png" alt="logo" class="footer_image">
+        </div>
+        <!-- <h1 class="footer_text" >zomato</h1> -->
+        <div class="table_container">
+            <ul class="table">
+                <li>Pricing</li>
+                <li>Terms and Conditions</li>
+                <li>Partnership</li>
+                <li>Carrer</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

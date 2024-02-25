@@ -1,0 +1,400 @@
+/* removing browser default padding and margin */
+*{
+    margin: 0;
+    /* it is  extra space that we want to leave around the thing that we have */
+    /* it is scaling after making the object fixed  */
+    padding: 0;
+    /* it is scaling after making the margine fixed  */
+}
+
+
+/* making a default style for the bdy*/
+body {
+    font-family: 'Merriweather', serif;
+    background: #d3dff7;
+}
+
+
+
+
+
+
+/* navigation bar */
+
+/* creating the navigation bar  */
+.navbar {
+    display: flex;
+    /* adding the flex properties as it is the parent and stores all the elements */
+    align-items: center;
+    /* used to align items(all the options that are in navigation bar) to the center */
+    justify-content: space-around;
+    /* we use space around as we dont want the things(items present in the navigation bar) to stick to the margins rather leave a certain space around for the border so we use the space around command */
+    background-color: #fff;
+    /* we add the background colour to the navigation bar  */
+}
+
+/* to sacale the company logo division */
+.navbar_company {
+    width: 100px;
+    /* here we are specifing the size of the division used for logo */
+}
+
+/* making image display at 100% in division */
+.navbar_logo {
+width: 100%;
+/* here we made sure that the image scales with 100 percent of the above made division size without changing any properties of the image */
+}
+
+
+/* designing the button as it is the only nav item  */
+.button_primary {
+    background-image: linear-gradient(
+        /* it means to apply multiple colour shuld get applied */
+        /* it has 2 parameters 1.direction (specifies from which direction the colour should be applied from) , 2. gradient colour */
+        to right,#ff512f 0%,#dd2476 51%,#ff512f 100%
+        /* the percentages used are the place upto wich percent the colour should be applied */
+    );
+    color: #fff;
+    /* text colur */
+    border: none;
+    /* removes border from the button */
+    padding:13px;
+    /* add a space between the border and the text */
+    border-radius: 6px;
+    /* adds the curved edges to the border */
+}
+
+/* adding hover effect to the button */
+.button_primary:hover {
+/* here :hover means that we want to apply a hover effect with the following probperties and the properties are written in between {} */
+    border: 2px solid #E90064;
+    /* the effect below is not supported in brave browser */
+    background-position: right center;
+    /* the colour change happens from right to center */
+    cursor: pointer;
+    /* the above command changes the mouse pointer to the hand symbol */
+}
+
+
+
+
+
+
+
+
+/* main section */
+
+/* container is the big box which will have everything then we have another section(hero container) section is divided into 2 division (hero_image_container and hero_discription) */
+.container {
+    /* we use the container class so as to make a margin (padding) throught the web page */
+    max-width: 100%;
+    /* here the max width symbolizes that below and till 100% container should scale accordingly to the width */
+    padding:20px;
+    /* we add the above distace between the container and the  */
+    margin: 0 auto;     
+    /* the above set the top and bottom margine to 0 and left and right to auto */
+}
+
+
+.hero_image_container {
+    /* it is the division containing the image */
+    width: 100%;
+    /* scales the image according to the width */
+}
+
+.hero_image {
+    /* it is the image */
+    width: 100%;
+    /* scale the image upto 100% of the hero image container  */
+    border-radius: 8px;
+    /* adds the curved edges to the border of the image */
+    box-shadow:0px 25px 50px -12px rgb(0, 0, 0, 0.25);
+    /* top right bottom left / opacity  hex code for box shadow*/
+}
+
+.hero_text {
+    /* it is the text specifications */
+    font-weight:800;
+    font-size: 30px;
+    margin: 20px 0px;
+    color: #1d3557;
+}
+
+
+
+
+
+
+
+/* explorer menu */
+.explore_menu_text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1d3557;
+}
+.food_card {
+    background-color: rgb(216, 228, 246);
+    border-radius: 8px;
+    box-shadow:0px 25px 50px -12px rgb(0, 0, 0, 0.25);
+    /* top right bottom left / opacity  hex code for box shadow*/
+}
+.food_card_image_container {
+    margin-top: 20px;
+    width: 100%;
+}
+.food_image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    /* we want to apply the border radius to only the uper vertexes so we right the values like above */
+    /* the format is top left, top right, right bottom, left bottom */
+
+}
+.food_card_discription {
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+/* quote container */
+
+
+
+
+.quote_container {
+    position :relative;
+    /* align-items: center; */
+    width: 100%;
+    height: 200px;
+    border-radius: 15px; 
+    display: flex;
+    /* we use flex here */
+    flex-direction: column;
+    /* added flex direction */
+    justify-content:center;
+    /* flex content should scale from center */
+    background: url(assets/quote\ colum\ img.webp) center center / cover no-repeat;
+    /* used to add the image via css into the container , center reperesents that the image should start scaling from center */
+    box-shadow:0px 25px 50px -12px rgb(0, 0, 0, 0.25);
+    /* top right bottom left / opacity  hex code for box shadow*/
+}
+
+.quote_image_bgcover {
+    position: absolute;
+    /* setting the bg cover as absolute */
+    height: 200px;
+    width: 100%;
+    border-radius: 15px; 
+    background-color: #0a4065;
+    opacity: 49%;
+    /* controlls the opacity of the thing  */ 
+}
+
+.quote_text {
+    margin: 0 5px;
+    position: relative;
+    /* adding the text relative to the bg cover */
+    z-index:3; 
+    /* adding text over the cover */
+    text-align: center;
+    /* aligning text to center according to the words  */
+    color: #ffffff;
+    font-size: 18.72px;
+    font-weight: 650;
+}
+
+
+
+
+
+/* Site  footer */
+
+.end_container {
+    width: 100%;
+    border-radius:  12px 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* divides the space equally between the divisions */
+    justify-items: center;
+    /* used to arrange items in a line one below or across */
+    align-items: center;
+    /* used to bring items to center of the page */
+    background-image: linear-gradient(
+        /* it means to apply multiple colour shuld get applied */
+        /* it has 2 parameters 1.direction (specifies from which direction the colour should be applied from) , 2. gradient colour */
+        to right,#ff512f 0%,   #dd2476 51%,   #ff512f 100%
+        /* the percentages used are the place upto wich percent the colour should be applied */
+    );
+}
+.footer_image_container {
+    max-width: 100%;
+}
+.footer_image{
+    width: 100%;
+    filter: brightness(0) invert(1);
+    /* the above code reverses the logo colour */
+}
+
+.table {
+color: #fff;
+padding-bottom: 23px;
+}
+
+
+
+li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+
+
+/* appling media querry according to the tablet */
+@media (min-width : 768px) {
+    /* desingning nav bar when the size reaches the above mentioned width */
+    .navbar {
+        justify-content: space-between;
+        /* creating a space between the logo and the items */
+        padding: 10px 30px;
+        /* giving more space between the button margin and the text */
+    }
+    .hero_container {
+        margin: 20px;
+        padding-bottom: 100px;
+        display: flex ;
+        flex-direction: row-reverse;
+        /* reverss the position of image and the text in tablet an pc view */
+        align-items: center;
+        /* brings both the tect and the image center lie on the same line and bloom from that outwards  */
+    }
+
+
+
+    /* EXPLORE MENU TABLET VIEW SETTINGS */
+    .explore_menu_background_gradient {
+        padding: 25px 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        background-image: linear-gradient(
+            /* it means to apply multiple colour shuld get applied */
+            /* it has 2 parameters 1.direction (specifies from which direction the colour should be applied from) , 2. gradient colour */
+            to right,#ff512f 0%,   #dd2476 51%,   #ff512f 100%
+            /* the percentages used are the place upto wich percent the colour should be applied */
+        );
+        transform: skewY(-7deg) ; 
+            /*transform is a property used for changing shape according to the x and y axix */
+            /* skewY is used to configure the y dimension */
+    }
+    .explore_menu_container {
+        position: relative;
+        z-index: 1;
+    }
+    .explore_menu_lists {
+        margin-top: 60px;
+        /* adds a margine from the top */
+        /* padding-top: 20px ; */
+        display: flex;
+        gap:15px;
+        /* adds a gap in between the food cards */
+        padding: 0 30px ;
+        /* provde the side padding in the exploremenu */
+        padding-bottom: 10%;
+        /* provides the bottom padding which is resizeable according to the width of container */
+    }
+    .food_card_image_container {
+        margin-top: 0px;
+    }
+    #pizza {
+        /* this is how we use a id (id  can override the predefined css for a particular instance) */
+        margin-top: -20px;
+        margin-bottom: 25px;
+        /* we apply the minus sign so as to decrease the margin that was there */
+        /* we apply the normal positive margie so as to increase the margine in the the specific area where the pizza card is present  */
+    }
+
+
+
+
+    /* QUOTE ROW TABLET VIEW SETTINGS */
+    .quote_container {
+        height: 300px;
+    }
+    .quote_image_bgcover {
+        height: 300px;
+    }
+    .quote_text {
+        font-weight: 500;
+        /* adding boldness */
+        font-size: xx-large;
+    }
+
+
+
+    /* Site  footer */
+
+.end_container {
+    flex-direction: row;
+}
+
+
+
+
+
+
+/* appling media querry according to the desktop */
+@media (min-width:1024px){
+    /* here container is specifing the size that it should of when the width is of 1024  */
+    /* when the width reaches 1024 side margin get added to reduce the container size to 60% */
+    .container {
+        width: 70%;
+    }
+    /* desingning nav bar companylogo and the button when the size reaches the above mentioned width (desktop size) */
+    .navbar_company {
+        width: 150px;
+    }
+    .button_primary {
+        padding: 20px;
+        /* giving more space between the button margin and the text */
+        font-size: 20px;
+        /* as the display size increased the zomato button text was same so we specified a special font size when width is 1024 */
+        font-weight: 600;
+        /* our text in button was not looking good as it was not bold */
+    }
+    .hero_discription {
+        width: 100%;
+        /* scales the discription in the section in the according to the width and makes it compete for equal space with the image when scale is above 1023 */
+    }
+    .hero_text {
+        font-size: 50px;
+        /* increase the text size to 50 after 1023 */
+    }
+
+
+
+
+/* EXPLORE MENU PC VIEW SETTINGS */
+    .explore_menu_text {
+        font-size: 48px;
+    }
+    .explore_menu_lists {
+        
+        gap: 30px;
+        padding-bottom: 10%;
+    }
+    .quote_text{
+        font-size: 38px;
+    }
+}
+}
